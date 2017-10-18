@@ -22,15 +22,17 @@ class EclassTop(QWidget):
     def setupButton(self):
         form = self.form
         form.webmailBtn.clicked.connect\
-            (lambda x: print("'WebMail for PC' Button clicked"))
+            (lambda: print("'WebMail for PC' Button clicked"))
         form.webdiskBtn.clicked.connect\
-            (lambda x: print("'WebDisk for PC' Button clicked"))
+            (lambda: print("'WebDisk for PC' Button clicked"))
         form.duetBtn.clicked.connect\
-            (lambda x: print("'Duet' Button clicked"))
+            (lambda: print("'Duet' Button clicked"))
         form.goGlobalBtn.clicked.connect\
-            (lambda x: print("'GoGlobal' Button clicked"))
+            (lambda: print("'GoGlobal' Button clicked"))
         form.elearningBtn.clicked.connect\
-            (lambda x: print("'e-learning' Button clicked"))
+            (lambda: print("'e-learning' Button clicked"))
+        form.enaviBtn.clicked.connect\
+            (lambda: print("This is the entry point for E-Navi"))
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -190,26 +190,6 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="1">
-            <widget class="QPushButton" name="webmailBtn_59">
-             <property name="styleSheet">
-              <string notr="true">border: none;</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="icon">
-              <iconset>
-               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>170</width>
-               <height>70</height>
-              </size>
-             </property>
-            </widget>
-           </item>
            <item row="0" column="0">
             <widget class="QPushButton" name="webmailBtn">
              <property name="styleSheet">
@@ -230,8 +210,8 @@
              </property>
             </widget>
            </item>
-           <item row="3" column="0">
-            <widget class="QPushButton" name="goGlobalBtn">
+           <item row="2" column="1">
+            <widget class="QPushButton" name="webmailBtn_59">
              <property name="styleSheet">
               <string notr="true">border: none;</string>
              </property>
@@ -240,7 +220,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/goglobal_btn.png</normaloff>../image/goglobal_btn.png</iconset>
+               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -251,7 +231,7 @@
             </widget>
            </item>
            <item row="4" column="0">
-            <widget class="QPushButton" name="elearningBtn">
+            <widget class="QPushButton" name="goGlobalBtn">
              <property name="styleSheet">
               <string notr="true">border: none;</string>
              </property>
@@ -260,7 +240,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/elearning_btn.png</normaloff>../image/elearning_btn.png</iconset>
+               <normaloff>../image/goglobal_btn.png</normaloff>../image/goglobal_btn.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -321,6 +301,60 @@
              <property name="icon">
               <iconset>
                <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>170</width>
+               <height>70</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QPushButton" name="enaviBtn">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../image/enavi_btn.png</normaloff>../image/enavi_btn.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>170</width>
+               <height>70</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QPushButton" name="elearningBtn">
+             <property name="styleSheet">
+              <string notr="true">border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../image/elearning_btn.png</normaloff>../image/elearning_btn.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>170</width>
+               <height>70</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../image/ecareer_btn2.png</normaloff>../image/ecareer_btn2.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -405,8 +439,6 @@
     </widget>
    </item>
   </layout>
-  <zorder>webmailBtn_52</zorder>
-  <zorder>scrollArea</zorder>
  </widget>
  <resources/>
  <connections/>
