@@ -1,23 +1,56 @@
 import sys
 
+import gui.forms
+from gui.qt import *
 
-from qt import *
-import forms
-
-class EclassTop(QWidget):
+class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.pages = QStackedLayout()
+        self.pages.addWidget(EclassTop(self))
+        self.pages.addWidget(EnaviPage(self))
+        self.pages.setCurrentIndex(0)
+        self.setLayout(self.pages)
+
+
+class EnaviPage(QWidget):
+    def __init__(self, mw):
+        super().__init__()
+        self.mw = mw
         self.initUi()
-        self.show()
+        self.center()
 
     def initUi(self):
-        self.setupWidget()
+        self.form = gui.forms.enaviPage.Ui_Form()
+        self.form.setupUi(self)
+        self.form.backBtn.clicked.connect(lambda: self.mw.pages.setCurrentIndex(0))
+
+    def center(self):
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
+
+
+
+
+class EclassTop(QWidget):
+    def __init__(self, mw):
+        super().__init__()
+        self.mw = mw
+        self.initUi()
+        self.center()
+
+    def initUi(self):
+        self.form = gui.forms.eclassTop.Ui_topView()
+        self.form.setupUi(self)
         self.setupButton()
 
-    def setupWidget(self):
-        self.form = forms.eclassTop.Ui_topView()
-        self.form.setupUi(self)
-
+    def center(self):
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
 
     def setupButton(self):
         form = self.form
@@ -32,10 +65,10 @@ class EclassTop(QWidget):
         form.elearningBtn.clicked.connect\
             (lambda: print("'e-learning' Button clicked"))
         form.enaviBtn.clicked.connect\
-            (lambda: print("This is the entry point for E-Navi"))
+            (lambda: self.mw.pages.setCurrentIndex(1))
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
-    widget = EclassTop()
+    mw = MainWindow()
     app.exec_()
