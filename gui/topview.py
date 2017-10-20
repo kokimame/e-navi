@@ -1,7 +1,7 @@
 import sys
 
-import gui.forms
-from gui.qt import *
+import forms
+from qt import *
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -21,7 +21,7 @@ class EnaviPage(QWidget):
         self.center()
 
     def initUi(self):
-        self.form = gui.forms.enaviPage.Ui_Form()
+        self.form = forms.enaviPage.Ui_Form()
         self.form.setupUi(self)
         self.form.backBtn.clicked.connect(lambda: self.mw.pages.setCurrentIndex(0))
 
@@ -42,7 +42,7 @@ class EclassTop(QWidget):
         self.center()
 
     def initUi(self):
-        self.form = gui.forms.eclassTop.Ui_topView()
+        self.form = forms.eclassTop.Ui_topView()
         self.form.setupUi(self)
         self.setupButton()
 
