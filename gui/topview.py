@@ -10,7 +10,19 @@ class MainWindow(QMainWindow):
         self.pages.addWidget(EclassTop(self))
         self.pages.addWidget(EnaviPage(self))
         self.pages.setCurrentIndex(0)
-        self.setLayout(self.pages)
+        cw = QWidget()
+        cw.setLayout(self.pages)
+
+        self.setGeometry(0,0,720,921)
+        self.setCentralWidget(cw)
+        self.center()
+        self.show()
+
+    def center(self):
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
 
 
 class EnaviPage(QWidget):
@@ -18,20 +30,11 @@ class EnaviPage(QWidget):
         super().__init__()
         self.mw = mw
         self.initUi()
-        self.center()
 
     def initUi(self):
         self.form = forms.enaviPage.Ui_Form()
         self.form.setupUi(self)
         self.form.backBtn.clicked.connect(lambda: self.mw.pages.setCurrentIndex(0))
-
-    def center(self):
-        qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
-        self.move(qr.topLeft())
-
-
 
 
 class EclassTop(QWidget):
@@ -39,18 +42,11 @@ class EclassTop(QWidget):
         super().__init__()
         self.mw = mw
         self.initUi()
-        self.center()
 
     def initUi(self):
         self.form = forms.eclassTop.Ui_topView()
         self.form.setupUi(self)
         self.setupButton()
-
-    def center(self):
-        qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
-        self.move(qr.topLeft())
 
     def setupButton(self):
         form = self.form
