@@ -2,6 +2,9 @@ import sys
 
 import forms
 from qt import *
+from homePage import HomePage
+from inputPage import InputPage
+from outputPage import OutputPage
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -9,9 +12,9 @@ class MainWindow(QMainWindow):
         self.pageStack = []
         self.pages = QStackedLayout()
         self.pages.addWidget(EclassTop(self))
-        self.pages.addWidget(EnaviPage(self))
-        self.pages.addWidget(EnaviStart(self))
-        self.pages.addWidget(EnaviEnd(self))
+        self.pages.addWidget(HomePage(self))
+        self.pages.addWidget(InputPage(self))
+        self.pages.addWidget(OutputPage(self))
         self.pages.setCurrentIndex(0)
         cw = QWidget()
         cw.setLayout(self.pages)
@@ -43,54 +46,6 @@ class MainWindow(QMainWindow):
         cp = QDesktopWidget().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
-
-
-class EnaviPage(QWidget):
-    def __init__(self, mw):
-        super().__init__()
-        self.mw = mw
-        self.initUi()
-
-    def initUi(self):
-        self.form = forms.enaviPage.Ui_Form()
-        self.form.setupUi(self)
-        self.form.startBtn.clicked.connect(self.goNextPage)
-
-    def goNextPage(self):
-        self.mw.pageStack.append(1)
-        self.mw.pages.setCurrentIndex(2)
-
-class EnaviStart(QWidget):
-    def __init__(self, mw):
-        super().__init__()
-        self.mw = mw
-        self.initUi()
-
-    def initUi(self):
-        self.form = forms.enaviStart.Ui_Form()
-        self.form.setupUi(self)
-        self.form.endBtn.clicked.connect(self.goNextPage)
-
-    def goNextPage(self):
-        self.mw.pageStack.append(2)
-        self.mw.pages.setCurrentIndex(3)
-
-
-class EnaviEnd(QWidget):
-    def __init__(self, mw):
-        super().__init__()
-        self.mw = mw
-        self.initUi()
-
-    def initUi(self):
-        self.form = forms.enaviEnd.Ui_Form()
-        self.form.setupUi(self)
-        self.form.homeBtn.clicked.connect(self.goNextPage)
-
-    def goNextPage(self):
-        self.mw.pageStack.append(3)
-        self.mw.pages.setCurrentIndex(1)
-
 
 
 class EclassTop(QWidget):
