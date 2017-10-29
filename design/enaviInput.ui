@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>721</width>
+    <width>724</width>
     <height>910</height>
    </rect>
   </property>
@@ -45,7 +45,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>709</width>
+        <width>712</width>
         <height>908</height>
        </rect>
       </property>
@@ -78,6 +78,25 @@
         </layout>
        </item>
        <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <column>
+          <property name="text">
+           <string/>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>質問</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>回答</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
         <widget class="Line" name="line">
          <property name="lineWidth">
           <number>5</number>
@@ -91,38 +110,7 @@
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_9">
-         <item>
-          <widget class="QRadioButton" name="radioButton">
-           <property name="text">
-            <string>テストアンケート</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_9">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_8">
-         <item>
-          <widget class="QRadioButton" name="radioButton_2">
-           <property name="text">
-            <string>テストアンケート</string>
-           </property>
-          </widget>
-         </item>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
          <item>
           <spacer name="horizontalSpacer_8">
            <property name="orientation">
@@ -136,43 +124,18 @@
            </property>
           </spacer>
          </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_10">
          <item>
-          <widget class="QRadioButton" name="radioButton_3">
+          <widget class="QLabel" name="label_3">
            <property name="text">
-            <string>テストアンケート</string>
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../image/link_btns.png</pixmap>
            </property>
           </widget>
          </item>
          <item>
-          <spacer name="horizontalSpacer_10">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_11">
-         <item>
-          <widget class="QRadioButton" name="radioButton_4">
-           <property name="text">
-            <string>テストアンケート</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_11">
+          <spacer name="horizontalSpacer_9">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -210,6 +173,19 @@
             <string>診断終了</string>
            </property>
           </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
          </item>
         </layout>
        </item>
