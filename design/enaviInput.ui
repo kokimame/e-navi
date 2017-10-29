@@ -120,7 +120,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="backBtn">
            <property name="text">
             <string>前へ</string>
            </property>
@@ -137,7 +137,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_2">
+          <widget class="QPushButton" name="nextBtn">
            <property name="text">
             <string>次へ</string>
            </property>

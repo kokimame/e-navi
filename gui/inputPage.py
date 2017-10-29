@@ -12,7 +12,9 @@ class InputPage(QWidget):
         self.form = forms.enaviInput.Ui_Form()
         self.form.setupUi(self)
         self.setupTable()
-        self.form.endBtn.clicked.connect(self.goNextPage)
+        self.form.nextBtn.clicked.connect(lambda: print("Move to the next QA page"))
+        self.form.backBtn.clicked.connect(lambda: self.goPage("EntryPage"))
+        self.form.endBtn.clicked.connect(lambda: self.goPage("OutputPage"))
 
     def setupTable(self):
         table = self.form.qaTable
@@ -22,7 +24,5 @@ class InputPage(QWidget):
         [table.setItem(i, 0,
                 QTableWidgetItem("これは " + str(i+1) + "番目の質問です")) for i in range(10)]
 
-
-    def goNextPage(self):
-        self.mw.pageStack.append(2)
-        self.mw.pages.setCurrentIndex(3)
+    def goPage(self, pageName):
+        self.mw.pm.setPage(pageName)

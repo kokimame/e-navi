@@ -11,9 +11,8 @@ class OutputPage(QWidget):
     def initUi(self):
         self.form = forms.enaviOutpu.Ui_Form()
         self.form.setupUi(self)
-        self.form.homeBtn.clicked.connect(self.goNextPage)
+        self.form.homeBtn.clicked.connect(lambda: self.goPage("HomePage"))
 
-    def goNextPage(self):
-        self.mw.pageStack.append(3)
-        self.mw.pages.setCurrentIndex(1)
+    def goPage(self, pageName):
+        self.mw.pm.setPage(pageName)
 
