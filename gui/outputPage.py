@@ -9,7 +9,7 @@ class OutputPage(QWidget):
         self.initUi()
 
     def initUi(self):
-        self.form = forms.enaviOutpu.Ui_Form()
+        self.form = forms.enaviOutput.Ui_Form()
         self.form.setupUi(self)
         self.form.homeBtn.clicked.connect(lambda: self.goPage("HomePage"))
 

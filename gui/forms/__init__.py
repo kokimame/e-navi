@@ -4,10 +4,10 @@ __all__ = [
  "enaviEntry",
  "enaviHome",
  "enaviInput",
- "enaviOutpu",
+ "enaviOutput",
 ]
 from . import eclassTop
 from . import enaviEntry
 from . import enaviHome
 from . import enaviInput
-from . import enaviOutpu
+from . import enaviOutput
