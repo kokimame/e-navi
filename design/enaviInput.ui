@@ -120,12 +120,26 @@
           </spacer>
          </item>
          <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>前へ</string>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="QLabel" name="label_3">
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
             <pixmap>../image/link_btns.png</pixmap>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>次へ</string>
            </property>
           </widget>
          </item>

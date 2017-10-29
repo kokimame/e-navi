@@ -7,6 +7,25 @@ from entryPage import EntryPage
 from inputPage import InputPage
 from outputPage import OutputPage
 
+class PageManager:
+    # { "Name Reference to the page": (PageClass, index in stacked layout)}
+    PAGES = {"EclassTop": (EclassTop, 0),
+             "HomePage": (HomePage, 1),
+             "EntryPage": (EntryPage, 2),
+             "InputPage": (InputPage, 3),
+             "OutputPage": (OutputPage, 4)}
+
+    def __init__(self):
+        self.pages = QStackedLayout()
+        self.pageHistory = []
+        for pval in PageManager.PAGES.values():
+            self.pages.addWidget(pval[0])
+
+    def setPage(self, pageName):
+        self.pageHistory.append(self.pages.currentIndex())
+        self.pages.setCurrentIndex(PageManager.PAGES[pageName][1])
+
+
 class MainWindow(QMainWindow):
 
     def __init__(self):

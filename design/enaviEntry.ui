@@ -51,7 +51,7 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QListView" name="listView"/>
+        <widget class="QTableWidget" name="tableWidget"/>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_14">
@@ -67,6 +67,13 @@
             </size>
            </property>
           </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="backBtn">
+           <property name="text">
+            <string>前へ</string>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QLabel" name="label_3">
