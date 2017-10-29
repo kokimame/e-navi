@@ -1,12 +1,14 @@
 import sys
 
-import forms
+import gui
 from qt import *
 from eclassTop import EclassTop
 from homePage import HomePage
 from entryPage import EntryPage
 from inputPage import InputPage
 from outputPage import OutputPage
+from popupDialog import PopupDialog
+
 
 class PageManager:
     # { "Name Reference to the page": (PageClass, index in stacked layout)}
@@ -33,6 +35,27 @@ class PageManager:
         prev = self.pageHistory.pop()
         self.pages.setCurrentIndex(prev)
 
+class DialogManager:
+    _dialogs = {
+        "Popup": [PopupDialog, None],
+    }
+
+    def open(self, name, *args):
+        (creator, instance) = self._dialogs[name]
+        if instance:
+            instance.setWindowState(Qt.WindowNoState)
+            instance.activateWindow()
+            instance.raise_()
+            return instance
+        else: # if Dialog instace is new
+            instance = creator(*args)
+            # Remember the newly created instance
+            self._dialogs[name][1] = instance
+            return instance
+
+    def close(self, name):
+        self._dialogs[name] = [self._dialogs[name][0], None]
+
 
 class MainWindow(QMainWindow):
 
@@ -40,6 +63,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.pm = PageManager(self)
         self.pm.setPage("EclassTop")
+        self.dm = DialogManager()
 
         cw = QWidget()
         cw.setLayout(self.pm.pages)

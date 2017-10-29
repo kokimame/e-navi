@@ -5,9 +5,11 @@ __all__ = [
  "enaviHome",
  "enaviInput",
  "enaviOutput",
+ "popupDialog",
 ]
 from . import eclassTop
 from . import enaviEntry
 from . import enaviHome
 from . import enaviInput
 from . import enaviOutput
+from . import popupDialog
