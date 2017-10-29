@@ -79,7 +79,7 @@ class MainWindow(QMainWindow):
         fileMenu = menubar.addMenu('&ファイル')
         editMenu = menubar.addMenu('&編集')
 
-        undoAction = QAction('&Undo', self)
+        undoAction = QAction('&戻る', self)
         undoAction.setShortcut('Ctrl+Z')
         undoAction.triggered.connect(self.undo)
         editMenu.addAction(undoAction)
