@@ -22,7 +22,6 @@ class PageManager:
         self.pages = QStackedLayout()
         self.pageHistory = []
         for pkey in sorted(PageManager.PAGES.keys()):
-            print(pkey)
             self.pages.addWidget(PageManager.PAGES[pkey][0](self.mw))
 
     def setPage(self, pageName):
