@@ -76,8 +76,8 @@ class MainWindow(QMainWindow):
     def setupMenu(self):
         menubar = self.menuBar()
         menubar.setNativeMenuBar(False)
-        fileMenu = menubar.addMenu('&File')
-        editMenu = menubar.addMenu('&Edit')
+        fileMenu = menubar.addMenu('&ファイル')
+        editMenu = menubar.addMenu('&編集')
 
         undoAction = QAction('&Undo', self)
         undoAction.setShortcut('Ctrl+Z')
