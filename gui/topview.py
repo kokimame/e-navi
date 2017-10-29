@@ -37,7 +37,7 @@ class PageManager:
 
 class DialogManager:
     _dialogs = {
-        "Popup": [PopupDialog, None],
+        "PopupDialog": [PopupDialog, None],
     }
 
     def open(self, name, *args):
