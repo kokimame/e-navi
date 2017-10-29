@@ -14,4 +14,4 @@ class HomePage(QWidget):
 
     def goNextPage(self):
         self.mw.pageStack.append(1)
-        self.mw.pages.setCurrentIndex(2)
+        self.mw.pages.setCurrentIndex(4)

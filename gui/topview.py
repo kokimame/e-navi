@@ -3,18 +3,24 @@ import sys
 import forms
 from qt import *
 from homePage import HomePage
+from entryPage import EntryPage
 from inputPage import InputPage
 from outputPage import OutputPage
 
 class MainWindow(QMainWindow):
+
     def __init__(self):
         super().__init__()
         self.pageStack = []
+
+        # TODO: Make a Page Manager
+        # and reference each of pages by its name not a number(index)
         self.pages = QStackedLayout()
-        self.pages.addWidget(EclassTop(self))
-        self.pages.addWidget(HomePage(self))
-        self.pages.addWidget(InputPage(self))
-        self.pages.addWidget(OutputPage(self))
+        self.pages.addWidget(EclassTop(self))   # 0
+        self.pages.addWidget(HomePage(self))    # 1
+        self.pages.addWidget(InputPage(self))   # 2
+        self.pages.addWidget(OutputPage(self))  # 3
+        self.pages.addWidget(EntryPage(self))   # 4
         self.pages.setCurrentIndex(0)
         cw = QWidget()
         cw.setLayout(self.pages)

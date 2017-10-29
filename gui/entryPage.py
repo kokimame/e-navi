@@ -11,8 +11,12 @@ class EntryPage(QWidget):
     def initUi(self):
         self.form = forms.enaviEntry.Ui_Form()
         self.form.setupUi(self)
-        self.form.endBtn.clicked.connect(self.goNextPage)
+        self.form.nextBtn.clicked.connect(self.goNextPage)
 
     def goNextPage(self):
-        self.mw.pageStack.append(2)
-        self.mw.pages.setCurrentIndex(3)
+        self.mw.pageStack.append(4)
+        self.mw.pages.setCurrentIndex(2)
+
+    def goToEnd(self):
+        self.mw.pageStack.append(4)
+        self.mw.pages.setCurrentIndex(1)
