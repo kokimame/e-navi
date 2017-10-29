@@ -1,6 +1,5 @@
 import sys
 
-import gui
 from qt import *
 from eclassTop import EclassTop
 from homePage import HomePage
