@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>管理者画面（質問）</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255,255,255)</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
     <number>5</number>
@@ -24,7 +27,7 @@
     <number>5</number>
    </property>
    <property name="bottomMargin">
-    <number>0</number>
+    <number>9</number>
    </property>
    <item row="0" column="0">
     <widget class="QScrollArea" name="scrollArea">
@@ -40,7 +43,7 @@
         <x>0</x>
         <y>0</y>
         <width>709</width>
-        <height>906</height>
+        <height>897</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
