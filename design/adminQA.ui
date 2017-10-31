@@ -118,7 +118,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="applyBt">
+          <widget class="QPushButton" name="applyBtn">
            <property name="text">
             <string>確定</string>
            </property>
