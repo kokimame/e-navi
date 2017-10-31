@@ -25,5 +25,9 @@ class AdminQA(QWidget):
         table.setColumnWidth(1, 110)
         table.setRowCount(100)
 
+        for i in range(100):
+            table.setItem(i, 0, QTableWidgetItem("質問" + str(i+1) + "の内容"))
+            table.setItem(i, 1, QTableWidgetItem("質問" + str(i+1) + "の配点"))
+
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)

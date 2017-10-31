@@ -28,5 +28,11 @@ class AdminFirm(QWidget):
         table.verticalHeader().setVisible(False)
         table.setRowCount(100)
 
+        for i in range(100):
+            table.setItem(i, 0, QTableWidgetItem("x"))
+            table.setItem(i, 1, QTableWidgetItem("企業" + str(i+1) + "の名前"))
+            table.setItem(i, 2, QTableWidgetItem("企業" + str(i+1) + "の所在地"))
+            table.setItem(i, 3, QTableWidgetItem("企業" + str(i+1) + "の連絡先"))
+
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)
