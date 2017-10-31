@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>確認</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="msgLabel">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -23,10 +23,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;これはポップアップのテストだよ&lt;/p&gt;&lt;p&gt;いろいろなボタンをのせることができるよ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="cancelBtn">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -39,7 +39,7 @@
     <string>キャンセル</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="okBtn">
    <property name="geometry">
     <rect>
      <x>190</x>

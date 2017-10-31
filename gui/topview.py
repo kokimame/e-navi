@@ -42,7 +42,7 @@ class DialogManager:
         "PopupDialog": [PopupDialog, None],
     }
 
-    def open(self, name, *args):
+    def open(self, name, *args, **kargs):
         (creator, instance) = self._dialogs[name]
         if instance:
             instance.setWindowState(Qt.WindowNoState)
@@ -50,7 +50,7 @@ class DialogManager:
             instance.raise_()
             return instance
         else: # if Dialog instace is new
-            instance = creator(*args)
+            instance = creator(*args, **kargs)
             # Remember the newly created instance
             self._dialogs[name][1] = instance
             return instance

@@ -12,8 +12,8 @@ class OutputPage(QWidget):
         self.form = forms.enaviOutput.Ui_Form()
         self.form.setupUi(self)
         self.form.homeBtn.clicked.connect(lambda: self.goPage("HomePage"))
-        self.form.pdfBtn.clicked.connect(lambda: self.mw.dm.open("PopupDialog", self.mw))
-
+        self.form.pdfBtn.clicked.connect(lambda: self.mw.dm.open("PopupDialog",
+                    self.mw, msg="PDFに出力しますか"))
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)
 
