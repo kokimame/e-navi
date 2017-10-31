@@ -16,6 +16,14 @@ class AdminQA(QWidget):
                                         msg="変更を適応しますか？"))
         self.form.endBtn.clicked.connect(lambda: self.mw.dm.open("PopupDialog", self.mw,
                                         msg="終了しますか？"))
+        self.setupTable()
+
+    def setupTable(self):
+        table = self.form.QAeditTable
+        table.setColumnCount(2)
+        table.setColumnWidth(0, 550)
+        table.setColumnWidth(1, 110)
+        table.setRowCount(100)
 
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)
