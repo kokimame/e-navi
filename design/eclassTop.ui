@@ -140,7 +140,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
+               <normaloff>../image/webmail_sp.png</normaloff>../image/webmail_sp.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -160,7 +160,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
+               <normaloff>../image/webdisk_sp.png</normaloff>../image/webdisk_sp.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -220,7 +220,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
+               <normaloff>../image/eclass_pc.png</normaloff>../image/eclass_pc.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -260,7 +260,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
+               <normaloff>../image/eclass_sp.png</normaloff>../image/eclass_sp.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -280,7 +280,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
+               <normaloff>../image/password.png</normaloff>../image/password.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -300,7 +300,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/webmail_pc.png</normaloff>../image/webmail_pc.png</iconset>
+               <normaloff>../image/webmail_mb.png</normaloff>../image/webmail_mb.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -355,6 +355,26 @@
              <property name="icon">
               <iconset>
                <normaloff>../image/ecareer_btn2.png</normaloff>../image/ecareer_btn2.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>170</width>
+               <height>70</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QPushButton" name="webmailBtn_61">
+             <property name="styleSheet">
+              <string notr="true">border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../image/fund_btn.png</normaloff>../image/fund_btn.png</iconset>
              </property>
              <property name="iconSize">
               <size>
