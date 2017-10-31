@@ -7,16 +7,19 @@ from entryPage import EntryPage
 from inputPage import InputPage
 from outputPage import OutputPage
 from popupDialog import PopupDialog
-
+from adminFirm import AdminFirm
+from adminQA import AdminQA
 
 class PageManager:
     # { "Name Reference to the page": (PageClass, index in stacked layout)}
     # Note: Store pages in order of alphabet
-    PAGES = {"EclassTop": (EclassTop, 0),
-             "EntryPage": (EntryPage, 1),
-             "HomePage": (HomePage, 2),
-             "InputPage": (InputPage, 3),
-             "OutputPage": (OutputPage, 4)}
+    PAGES = {"AdminFirm": (AdminFirm, 0),
+             "AdminQA": (AdminQA, 1),
+             "EclassTop": (EclassTop, 2),
+             "EntryPage": (EntryPage, 3),
+             "HomePage": (HomePage, 4),
+             "InputPage": (InputPage, 5),
+             "OutputPage": (OutputPage, 6)}
 
     def __init__(self, mw):
         self.mw = mw

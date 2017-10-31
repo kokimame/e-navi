@@ -1,17 +1,17 @@
 import forms
 from qt import *
 
-class HomePage(QWidget):
+
+class AdminFirm(QWidget):
     def __init__(self, mw):
         super().__init__()
         self.mw = mw
         self.initUi()
 
     def initUi(self):
-        self.form = forms.enaviHome.Ui_Form()
+        self.form = forms.adminFirm.Ui_Form()
         self.form.setupUi(self)
-        self.form.startBtn.clicked.connect(lambda: self.goPage("EntryPage"))
-        self.form.adminBtn.clicked.connect(lambda: self.goPage("AdminQA"))
+        self.form.dbBtn.clicked.connect(lambda: self.goPage("AdminQA"))
 
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)

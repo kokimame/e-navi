@@ -34,10 +34,10 @@ class Ui_Form(object):
         self.label.setPixmap(QtGui.QPixmap("../image/enavi_header.png"))
         self.label.setObjectName("label")
         self.horizontalLayout_2.addWidget(self.label)
-        self.pushButton = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton.setStyleSheet("background-color: rgb(0,255,255)")
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout_2.addWidget(self.pushButton)
+        self.adminBtn = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.adminBtn.setStyleSheet("background-color: rgb(0,255,255)")
+        self.adminBtn.setObjectName("adminBtn")
+        self.horizontalLayout_2.addWidget(self.adminBtn)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
@@ -111,7 +111,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "進路適性診断 e-navi"))
-        self.pushButton.setText(_translate("Form", "管理者ページヘ"))
+        self.adminBtn.setText(_translate("Form", "管理者ページヘ"))
         self.label_6.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;\">・利用規約</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:14pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><br/></p></body></html>"))
         self.label_9.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt;\">注）〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:12pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p><p><span style=\" font-size:12pt;\">〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</span></p></body></html>"))
         self.label_2.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:18pt; font-weight:600;\">同意する</span></p></body></html>"))
