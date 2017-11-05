@@ -73,6 +73,7 @@ class MainWindow(QMainWindow):
         self.setupMenu()
         self.setGeometry(0,0,720,921)
         self.setCentralWidget(cw)
+        self.setWindowTitle("e-navi プロトタイプ")
         self.center()
         self.show()
 
