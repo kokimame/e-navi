@@ -23,6 +23,11 @@ class AdminEntry(QWidget):
         form.genDelBtn.clicked.connect(lambda: self.deleteListWidgetItem(form.generalList))
         form.teachDelBtn.clicked.connect(lambda: self.deleteListWidgetItem(form.teachList))
 
+        form.fieldAddBtn.clicked.connect(lambda: self.addLineEdit(form.fieldList))
+        form.jobAddBtn.clicked.connect(lambda: self.addLineEdit(form.jobList))
+        form.genAddBtn.clicked.connect(lambda: self.addLineEdit(form.generalList))
+        form.teachAddBtn.clicked.connect(lambda: self.addLineEdit(form.teachList))
+
     def deleteListWidgetItem(self, list):
         if len(list.selectedItems()) == 0:
             return
@@ -34,6 +39,13 @@ class AdminEntry(QWidget):
                     break
 
         list.repaint()
+
+    def addLineEdit(self, list):
+        lwi = QListWidgetItem()
+        list.addItem(lwi)
+        list.setItemWidget(lwi, QLineEdit())
+        list.repaint()
+
 
 
 
