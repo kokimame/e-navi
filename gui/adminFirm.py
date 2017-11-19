@@ -11,7 +11,9 @@ class AdminFirm(QWidget):
     def initUi(self):
         self.form = forms.adminFirm.Ui_Form()
         self.form.setupUi(self)
-        self.form.dbBtn.clicked.connect(lambda: self.goPage("AdminQA"))
+        self.form.qaBtn.clicked.connect(lambda: self.goPage("AdminQA"))
+        self.form.entryBtn.clicked.connect(lambda: self.goPage("AdminEntry"))
+
         self.form.applyBtn.clicked.connect(lambda: self.mw.dm.open("PopupDialog", self.mw,
                                         msg="変更を適応しますか？", okTrigger=lambda: self.goPage("AdminFirm")))
         self.form.endBtn.clicked.connect(lambda: self.mw.dm.open("PopupDialog", self.mw,
