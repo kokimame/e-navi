@@ -110,103 +110,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="fieldList">
-             <item>
-              <property name="text">
-               <string>農業，林業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>漁業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>鉱業，採石業，砂利採取業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>建設業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>製造業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>電気・ガス・熱供給・水道業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>情報通信業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>運輸業・郵便業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>卸売業，小売業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>金融業，保険業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>不動産業，物品賃貸業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>学術研究，専門・技術サービス業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>宿泊業，飲食サービス業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>生活関連サービス業，娯楽業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>教育，学習支援業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>医療，福祉</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>複合サービス事業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>サービス業</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>公務</string>
-              </property>
-             </item>
-            </widget>
+            <widget class="QListWidget" name="fieldList"/>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -251,58 +155,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="jobList">
-             <item>
-              <property name="text">
-               <string>営業職</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>企画管理</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>事務・アシスタント</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>販売・サービス職</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>専門職（コンサルティングファーム，専門事務所）</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>金融系専門職</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>公務員・教員・農林水産関連職</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>技術職</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>医療系専門職</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>クリエイター・クリエイティブ職</string>
-              </property>
-             </item>
-            </widget>
+            <widget class="QListWidget" name="jobList"/>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_7">
@@ -347,33 +200,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="teachList">
-             <item>
-              <property name="text">
-               <string>教員免許高一種</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>教員免許中一種</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>教員免許小一種</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>教員免許幼一種</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>養護教諭一種</string>
-              </property>
-             </item>
-            </widget>
+            <widget class="QListWidget" name="teachList"/>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -418,58 +245,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="generalList">
-             <item>
-              <property name="text">
-               <string>基本情報処理技術者</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>応用情報処理技術者</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>行政書士</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>司法書士</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>社会保険労務士</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>宅件建物取引士</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>簿記3級</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>簿記2級</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>介護福祉士</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>気象予報士</string>
-              </property>
-             </item>
-            </widget>
+            <widget class="QListWidget" name="generalList"/>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_9">
