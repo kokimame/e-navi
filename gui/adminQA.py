@@ -1,5 +1,22 @@
 import forms
 from qt import *
+from random import randint
+
+
+class AttrBox(QWidget):
+    class MySpin(QSpinBox):
+        def __init__(self):
+            QSpinBox.__init__(self)
+            self.setValue(randint(0, 99))
+
+    def __init__(self):
+        super(AttrBox, self).__init__()
+        hbox = QHBoxLayout()
+        hbox.addWidget(self.MySpin())
+        hbox.addWidget(self.MySpin())
+        hbox.addWidget(self.MySpin())
+        hbox.addWidget(self.MySpin())
+        self.setLayout(hbox)
 
 
 class AdminQA(QWidget):
@@ -22,13 +39,14 @@ class AdminQA(QWidget):
     def setupTable(self):
         table = self.form.QAeditTable
         table.setColumnCount(2)
-        table.setColumnWidth(0, 550)
-        table.setColumnWidth(1, 110)
+        table.setColumnWidth(0, 450)
+        table.setColumnWidth(1, 210)
         table.setRowCount(100)
 
         for i in range(100):
+            table.setRowHeight(i, 50)
             table.setItem(i, 0, QTableWidgetItem("質問" + str(i+1) + "の内容"))
-            table.setItem(i, 1, QTableWidgetItem("質問" + str(i+1) + "の配点"))
+            table.setCellWidget(i, 1, AttrBox())
 
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)
