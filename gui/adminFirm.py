@@ -1,5 +1,6 @@
 import forms
 from qt import *
+from adminQA import AttrBox
 
 
 class AdminFirm(QWidget):
@@ -24,17 +25,18 @@ class AdminFirm(QWidget):
         table = self.form.firmTable
         table.setColumnCount(4)
         table.setColumnWidth(0, 30)
-        table.setColumnWidth(1, 300)
-        table.setColumnWidth(2, 220)
-        table.setColumnWidth(3, 140)
+        table.setColumnWidth(1, 280)
+        table.setColumnWidth(2, 140)
+        table.setColumnWidth(3, 240)
         table.verticalHeader().setVisible(False)
         table.setRowCount(100)
 
         for i in range(100):
+            table.setRowHeight(i, 50)
             table.setItem(i, 0, QTableWidgetItem("x"))
             table.setItem(i, 1, QTableWidgetItem("企業" + str(i+1) + "の名前"))
             table.setItem(i, 2, QTableWidgetItem("企業" + str(i+1) + "の所在地"))
-            table.setItem(i, 3, QTableWidgetItem("企業" + str(i+1) + "の連絡先"))
+            table.setCellWidget(i, 3, AttrBox())
 
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)

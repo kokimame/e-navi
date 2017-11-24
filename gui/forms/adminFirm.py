@@ -102,7 +102,7 @@ class Ui_Form(object):
         item = self.firmTable.horizontalHeaderItem(2)
         item.setText(_translate("Form", "所在地"))
         item = self.firmTable.horizontalHeaderItem(3)
-        item.setText(_translate("Form", "連絡先"))
+        item.setText(_translate("Form", "属性(A1,B1,C1,D1)"))
         self.delBtn.setText(_translate("Form", "削除"))
         self.addBtn.setText(_translate("Form", "追加"))
         self.endBtn.setText(_translate("Form", "終了"))

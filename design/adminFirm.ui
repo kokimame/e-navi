@@ -117,7 +117,7 @@
          </column>
          <column>
           <property name="text">
-           <string>連絡先</string>
+           <string>属性(A1,B1,C1,D1)</string>
           </property>
          </column>
         </widget>
