@@ -10,7 +10,8 @@ class HomePage(QWidget):
     def initUi(self):
         self.form = forms.enaviHome.Ui_Form()
         self.form.setupUi(self)
-        self.form.startBtn.clicked.connect(lambda: self.goPage("EntryPage"))
+        self.form.agreeBtn.clicked.connect(lambda: self.goPage("EntryPage"))
+        self.form.disagreeBtn.clicked.connect(lambda: self.goPage("EclassTop"))
         self.form.adminBtn.clicked.connect(lambda: self.goPage("AdminQA"))
 
     def goPage(self, pageName):
