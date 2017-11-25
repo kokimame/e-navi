@@ -2,6 +2,15 @@ import forms
 from qt import *
 from adminQA import AttrBox
 
+FIELDLBL = ["農業，林業", "漁業", "鉱業，採石業，砂利採取業", "建設業", "製造業", "電気・ガス・熱供給・水道業",
+            "情報通信業", "運輸業・郵便業", "卸売業，小売業", "金融業，保険業", "不動産業，物品賃貸業",
+            "学術研究，専門・技術サービス業", "宿泊業，飲食サービス業", "生活関連サービス業，娯楽業",
+            "教育，学習支援業", "医療，福祉", "複合サービス事業", "サービス業", "公務"]
+
+JOBLBL = ["営業職","企画管理","事務・アシスタント","販売・サービス職","コンサル・専門事務所","金融系専門職",
+                  "公務員・教員・農林水産関連職","技術職","医療系専門職","クリエイター・クリエイティブ職"]
+
+
 class LblAttr(QWidget):
     def __init__(self, label):
         super(LblAttr, self).__init__()
@@ -41,20 +50,14 @@ class AdminEntry(QWidget):
         form = self.form
 
         # Field list -------
-        fieldLbl = ["農業，林業", "漁業", "鉱業，採石業，砂利採取業", "建設業", "製造業", "電気・ガス・熱供給・水道業",
-                    "情報通信業", "運輸業・郵便業", "卸売業，小売業", "金融業，保険業", "不動産業，物品賃貸業",
-                    "学術研究，専門・技術サービス業", "宿泊業，飲食サービス業", "生活関連サービス業，娯楽業",
-                    "教育，学習支援業", "医療，福祉","複合サービス事業", "サービス業", "公務"]
 
-        for lbl in fieldLbl:
+        for lbl in FIELDLBL:
             lwi = QListWidgetItem(lbl)
             form.fieldList.addItem(lwi)
 
         # Job list -------
-        jobLbl = ["営業職","企画管理","事務・アシスタント","販売・サービス職","コンサル・専門事務所","金融系専門職",
-                  "公務員・教員・農林水産関連職","技術職","医療系専門職","クリエイター・クリエイティブ職"]
 
-        for lbl in jobLbl:
+        for lbl in JOBLBL:
             lwi = QListWidgetItem(lbl)
             form.jobList.addItem(lwi)
 
