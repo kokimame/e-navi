@@ -41,9 +41,9 @@ class AdminQA(QWidget):
         table.setColumnCount(2)
         table.setColumnWidth(0, 450)
         table.setColumnWidth(1, 210)
-        table.setRowCount(100)
+        table.setRowCount(90)
 
-        for i in range(100):
+        for i in range(90):
             table.setRowHeight(i, 50)
             table.setItem(i, 0, QTableWidgetItem("質問" + str(i+1) + "の内容"))
             table.setCellWidget(i, 1, AttrBox())
