@@ -43,10 +43,11 @@ class AdminQA(QWidget):
         table.setColumnWidth(1, 210)
         table.setRowCount(90)
 
+        types = ["完璧主義者", "援助者", "達成者", "芸術家", "観察者", "忠実家", "楽天家", "挑戦者", "調停者"]
         for i in range(90):
             table.setRowHeight(i, 50)
             table.setItem(i, 0, QTableWidgetItem("質問" + str(i+1) + "の内容"))
-            table.setCellWidget(i, 1, AttrBox())
+            table.setItem(i, 1, QTableWidgetItem(types[int(i / 10)]))
 
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)
