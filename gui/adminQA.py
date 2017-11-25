@@ -49,7 +49,7 @@ class AdminQA(QWidget):
         for i in range(90):
             table.setRowHeight(i, 50)
             table.setItem(i, 0, QTableWidgetItem("質問" + str(i+1) + "の内容"))
-            table.setItem(i, 1, QTableWidgetItem(types[int(i / 10)]))
+            table.setItem(i, 1, QTableWidgetItem(types[int(i / 10)] + "(%d)" % (int(i/10)+1)))
             table.item(i, 1).setBackground(QColor(*rgbs[int(i / 10)]))
 
     def goPage(self, pageName):
