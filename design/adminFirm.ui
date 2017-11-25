@@ -112,7 +112,7 @@
          </column>
          <column>
           <property name="text">
-           <string>属性</string>
+           <string>上位4属性(0は無効値)</string>
           </property>
          </column>
          <column>

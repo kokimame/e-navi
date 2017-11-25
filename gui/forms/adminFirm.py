@@ -104,7 +104,7 @@ class Ui_Form(object):
         item = self.firmTable.horizontalHeaderItem(1)
         item.setText(_translate("Form", "所在地"))
         item = self.firmTable.horizontalHeaderItem(2)
-        item.setText(_translate("Form", "属性"))
+        item.setText(_translate("Form", "上位4属性(0は無効値)"))
         item = self.firmTable.horizontalHeaderItem(3)
         item.setText(_translate("Form", "業種"))
         item = self.firmTable.horizontalHeaderItem(4)

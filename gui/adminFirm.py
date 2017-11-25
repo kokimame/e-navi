@@ -13,14 +13,16 @@ class FirmAttr(QWidget):
             if val != None:
                 self.setValue(val)
             else:
-                self.setValue(random.randint(1, 4))
+                self.setValue(random.randint(1, 9))
+            self.setRange(0, 9)
 
     def __init__(self):
         super(FirmAttr, self).__init__()
         hbox = QHBoxLayout()
         hbox.addWidget(self.MySpin())
         hbox.addWidget(self.MySpin())
-        lastTwo = random.choice([[0,0],[random.randint(1,4),0],[random.randint(1,4),random.randint(1,4)]])
+        lastTwo = random.choice([[0,0],[random.randint(1,9),0],
+                                 [random.randint(1,9),random.randint(1,9)]])
         hbox.addWidget(self.MySpin(val=lastTwo[0]))
         hbox.addWidget(self.MySpin(val=lastTwo[1]))
         self.setLayout(hbox)
