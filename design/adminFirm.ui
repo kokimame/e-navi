@@ -102,11 +102,6 @@
         <widget class="QTableWidget" name="firmTable">
          <column>
           <property name="text">
-           <string/>
-          </property>
-         </column>
-         <column>
-          <property name="text">
            <string>企業名</string>
           </property>
          </column>
@@ -117,7 +112,17 @@
          </column>
          <column>
           <property name="text">
-           <string>属性(A1,B1,C1,D1)</string>
+           <string>属性</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>業種</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>職種</string>
           </property>
          </column>
         </widget>
