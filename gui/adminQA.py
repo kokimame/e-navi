@@ -44,10 +44,13 @@ class AdminQA(QWidget):
         table.setRowCount(90)
 
         types = ["完璧主義者", "援助者", "達成者", "芸術家", "観察者", "忠実家", "楽天家", "挑戦者", "調停者"]
+        rgbs = [(255,102,102),(255,178,102),(255,255,102),(178,255,102),(102,255,102),
+                (102,255,178),(102,255,255),(102,178,255),(102,102,255)]
         for i in range(90):
             table.setRowHeight(i, 50)
             table.setItem(i, 0, QTableWidgetItem("質問" + str(i+1) + "の内容"))
             table.setItem(i, 1, QTableWidgetItem(types[int(i / 10)]))
+            table.item(i, 1).setBackground(QColor(*rgbs[int(i / 10)]))
 
     def goPage(self, pageName):
         self.mw.pm.setPage(pageName)
