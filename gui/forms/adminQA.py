@@ -83,7 +83,7 @@ class Ui_Form(object):
         item = self.QAeditTable.horizontalHeaderItem(0)
         item.setText(_translate("Form", "質問内容"))
         item = self.QAeditTable.horizontalHeaderItem(1)
-        item.setText(_translate("Form", "属性(A, B, C, D)"))
+        item.setText(_translate("Form", "属性"))
         self.endBtn.setText(_translate("Form", "終了"))
         self.applyBtn.setText(_translate("Form", "確定"))
 

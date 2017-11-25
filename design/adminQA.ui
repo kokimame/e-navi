@@ -107,7 +107,7 @@
          </column>
          <column>
           <property name="text">
-           <string>属性(A, B, C, D)</string>
+           <string>属性</string>
           </property>
          </column>
         </widget>
