@@ -33,7 +33,7 @@ class AdminEntry(QWidget):
         form.dbBtn.clicked.connect(lambda: self.goPage("AdminFirm"))
         form.qaBtn.clicked.connect(lambda: self.goPage("AdminQA"))
         form.applyBtn.clicked.connect(lambda: self.mw.dm.open("PopupDialog", self.mw,
-                                        msg="変更を適応しますか？", okTrigger=lambda: self.goPage("AdminFirm")))
+                                        msg="変更を適応しますか？", okTrigger=lambda: self.goPage("AdminEntry")))
         form.endBtn.clicked.connect(lambda: self.mw.dm.open("PopupDialog", self.mw,
                                         msg="終了しますか？", okTrigger=lambda: self.goPage("HomePage")))
         form.fieldDelBtn.clicked.connect(lambda: self.deleteListWidgetItem(form.fieldList))
