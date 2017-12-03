@@ -42,6 +42,7 @@ class InputPage(QWidget):
 
     def goPage(self, pageName):
         if not self.form.unfillLbl.isVisible():
+            # Show up the label and stay at the page only once
             self.form.unfillLbl.setVisible(True)
             return
         self.mw.pm.setPage(pageName)
