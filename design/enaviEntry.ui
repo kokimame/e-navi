@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>724</width>
-    <height>658</height>
+    <height>910</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -46,7 +46,7 @@
         <x>0</x>
         <y>0</y>
         <width>712</width>
-        <height>656</height>
+        <height>908</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -605,6 +605,62 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="lineWidth">
+          <number>5</number>
+         </property>
+         <property name="midLineWidth">
+          <number>10</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <spacer name="horizontalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="unfillLbl">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ff0000;&quot;&gt;※未入力の項目があります&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="pixmap">
+            <pixmap>../image/unfill_error.png</pixmap>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_14">

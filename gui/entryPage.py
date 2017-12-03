@@ -11,6 +11,7 @@ class EntryPage(QWidget):
     def initUi(self):
         self.form = forms.enaviEntry.Ui_Form()
         self.form.setupUi(self)
+        self.form.unfillLbl.setVisible(False)
         self.form.nextBtn.clicked.connect(lambda: self.goPage("InputPage"))
         self.form.endBtn.clicked.connect(lambda: self.goPage("HomePage"))
         # self.setupTable()
@@ -27,4 +28,8 @@ class EntryPage(QWidget):
 
 
     def goPage(self, pageName):
+        if not self.form.unfillLbl.isVisible():
+            # Show up the label and stay at the page only once
+            self.form.unfillLbl.setVisible(True)
+            return
         self.mw.pm.setPage(pageName)
