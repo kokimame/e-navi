@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>724</width>
-    <height>910</height>
+    <height>719</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -46,7 +46,7 @@
         <x>0</x>
         <y>0</y>
         <width>712</width>
-        <height>908</height>
+        <height>717</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -79,12 +79,30 @@
        </item>
        <item>
         <layout class="QGridLayout" name="gridLayout_2">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;業種&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
+         <item row="0" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QComboBox" name="fieldCombo1">
+             <property name="styleSheet">
+              <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="fieldCombo2">
+             <property name="styleSheet">
+              <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="fieldCombo3">
+             <property name="styleSheet">
+              <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_4">
@@ -93,396 +111,6 @@
            </property>
           </widget>
          </item>
-         <item row="0" column="1">
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <item>
-            <widget class="QComboBox" name="comboBox_4"/>
-           </item>
-           <item>
-            <widget class="QComboBox" name="comboBox_5"/>
-           </item>
-           <item>
-            <widget class="QComboBox" name="comboBox_6"/>
-           </item>
-          </layout>
-         </item>
-         <item row="2" column="1">
-          <layout class="QVBoxLayout" name="verticalLayout_3">
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
-             <item>
-              <widget class="QRadioButton" name="radioButton">
-               <property name="text">
-                <string>北海道</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_2">
-               <property name="text">
-                <string>青森</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_3">
-               <property name="text">
-                <string>岩手</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_6">
-               <property name="text">
-                <string>宮城</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_5">
-               <property name="text">
-                <string>秋田</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_4">
-               <property name="text">
-                <string>山形</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_20">
-               <property name="text">
-                <string>福島</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_19">
-               <property name="text">
-                <string>茨城</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_6">
-             <item>
-              <widget class="QRadioButton" name="radioButton_21">
-               <property name="text">
-                <string>栃木</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_22">
-               <property name="text">
-                <string>群馬</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_13">
-               <property name="text">
-                <string>埼玉</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_23">
-               <property name="text">
-                <string>千葉</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_24">
-               <property name="text">
-                <string>東京</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_14">
-               <property name="text">
-                <string>神奈川</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_15">
-               <property name="text">
-                <string>新潟</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_16">
-               <property name="text">
-                <string>富山</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_9">
-             <item>
-              <widget class="QRadioButton" name="radioButton_17">
-               <property name="text">
-                <string>石川</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_25">
-               <property name="text">
-                <string>山梨</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_18">
-               <property name="text">
-                <string>長野</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_29">
-               <property name="text">
-                <string>岐阜</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_28">
-               <property name="text">
-                <string>静岡</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_27">
-               <property name="text">
-                <string>愛知</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_26">
-               <property name="text">
-                <string>三重</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_30">
-               <property name="text">
-                <string>滋賀</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_10">
-             <item>
-              <widget class="QRadioButton" name="radioButton_45">
-               <property name="text">
-                <string>京都</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_46">
-               <property name="text">
-                <string>大阪</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_47">
-               <property name="text">
-                <string>兵庫</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_48">
-               <property name="text">
-                <string>奈良</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_49">
-               <property name="text">
-                <string>和歌山</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_50">
-               <property name="text">
-                <string>鳥取</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_51">
-               <property name="text">
-                <string>島根</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_52">
-               <property name="text">
-                <string>岡山</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_15">
-             <item>
-              <widget class="QRadioButton" name="radioButton_53">
-               <property name="text">
-                <string>広島</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_54">
-               <property name="text">
-                <string>山口</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_55">
-               <property name="text">
-                <string>徳島</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_56">
-               <property name="text">
-                <string>香川</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_57">
-               <property name="text">
-                <string>愛媛</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_58">
-               <property name="text">
-                <string>高知</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_59">
-               <property name="text">
-                <string>福岡</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_60">
-               <property name="text">
-                <string>佐賀</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_16">
-             <item>
-              <widget class="QRadioButton" name="radioButton_35">
-               <property name="text">
-                <string>長崎</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_36">
-               <property name="text">
-                <string>長崎</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_7">
-               <property name="text">
-                <string>熊本</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_31">
-               <property name="text">
-                <string>大分</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_32">
-               <property name="text">
-                <string>宮崎</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_34">
-               <property name="text">
-                <string>鹿児島</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QRadioButton" name="radioButton_37">
-               <property name="text">
-                <string>沖縄</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_5">
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;希望勤務地&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <layout class="QHBoxLayout" name="horizontalLayout">
-           <item>
-            <widget class="QComboBox" name="comboBox"/>
-           </item>
-           <item>
-            <widget class="QComboBox" name="comboBox_2"/>
-           </item>
-           <item>
-            <widget class="QComboBox" name="comboBox_3"/>
-           </item>
-          </layout>
-         </item>
          <item row="3" column="0">
           <widget class="QLabel" name="label_8">
            <property name="text">
@@ -490,70 +118,60 @@
            </property>
           </widget>
          </item>
-         <item row="3" column="1">
+         <item row="3" column="2">
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_11">
              <item>
-              <widget class="QLabel" name="label_9">
-               <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;一般&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <widget class="QComboBox" name="genCombo1">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_16"/>
+              <widget class="QComboBox" name="genCombo2">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+               </property>
+              </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_17"/>
-             </item>
-             <item>
-              <widget class="QComboBox" name="comboBox_18"/>
+              <widget class="QComboBox" name="genCombo3">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_12">
              <item>
-              <widget class="QLabel" name="label_10">
-               <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;教職&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <widget class="QComboBox" name="teachCombo1">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_9"/>
+              <widget class="QComboBox" name="teachCombo2">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+               </property>
+              </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_8"/>
-             </item>
-             <item>
-              <widget class="QComboBox" name="comboBox_7"/>
+              <widget class="QComboBox" name="teachCombo3">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_13">
-             <item>
-              <widget class="QLabel" name="label_11">
-               <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;語学&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_13">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
              <item>
               <widget class="QLabel" name="label_12">
                <property name="text">
@@ -562,7 +180,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_10"/>
+              <widget class="QComboBox" name="toeicCombo">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+               </property>
+              </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_13">
@@ -572,7 +194,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_11"/>
+              <widget class="QComboBox" name="toeflCombo">
+               <property name="styleSheet">
+                <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+               </property>
+              </widget>
              </item>
              <item>
               <spacer name="horizontalSpacer_16">
@@ -590,6 +216,447 @@
             </layout>
            </item>
           </layout>
+         </item>
+         <item row="3" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;一般&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;教職&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;語学&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;業種&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;希望勤務地&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QComboBox" name="jobCombo1">
+             <property name="styleSheet">
+              <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="jobCombo2">
+             <property name="styleSheet">
+              <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="jobCombo3">
+             <property name="styleSheet">
+              <string notr="true">QComboBox::item { background-color: rgb(200, 200, 200); }</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="2">
+          <widget class="QGroupBox" name="groupBox">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255,255,255)</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QRadioButton" name="radioButton">
+                <property name="text">
+                 <string>北海道</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_2">
+                <property name="text">
+                 <string>青森</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_3">
+                <property name="text">
+                 <string>岩手</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_6">
+                <property name="text">
+                 <string>宮城</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_5">
+                <property name="text">
+                 <string>秋田</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_4">
+                <property name="text">
+                 <string>山形</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_20">
+                <property name="text">
+                 <string>福島</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_19">
+                <property name="text">
+                 <string>茨城</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QRadioButton" name="radioButton_21">
+                <property name="text">
+                 <string>栃木</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_22">
+                <property name="text">
+                 <string>群馬</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_13">
+                <property name="text">
+                 <string>埼玉</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_23">
+                <property name="text">
+                 <string>千葉</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_24">
+                <property name="text">
+                 <string>東京</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_14">
+                <property name="text">
+                 <string>神奈川</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_15">
+                <property name="text">
+                 <string>新潟</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_16">
+                <property name="text">
+                 <string>富山</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QRadioButton" name="radioButton_17">
+                <property name="text">
+                 <string>石川</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_25">
+                <property name="text">
+                 <string>山梨</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_18">
+                <property name="text">
+                 <string>長野</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_29">
+                <property name="text">
+                 <string>岐阜</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_28">
+                <property name="text">
+                 <string>静岡</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_27">
+                <property name="text">
+                 <string>愛知</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_26">
+                <property name="text">
+                 <string>三重</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_30">
+                <property name="text">
+                 <string>滋賀</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QRadioButton" name="radioButton_45">
+                <property name="text">
+                 <string>京都</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_46">
+                <property name="text">
+                 <string>大阪</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_47">
+                <property name="text">
+                 <string>兵庫</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_48">
+                <property name="text">
+                 <string>奈良</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_49">
+                <property name="text">
+                 <string>和歌山</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_50">
+                <property name="text">
+                 <string>鳥取</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_51">
+                <property name="text">
+                 <string>島根</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_52">
+                <property name="text">
+                 <string>岡山</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_15">
+              <item>
+               <widget class="QRadioButton" name="radioButton_53">
+                <property name="text">
+                 <string>広島</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_54">
+                <property name="text">
+                 <string>山口</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_55">
+                <property name="text">
+                 <string>徳島</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_56">
+                <property name="text">
+                 <string>香川</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_57">
+                <property name="text">
+                 <string>愛媛</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_58">
+                <property name="text">
+                 <string>高知</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_59">
+                <property name="text">
+                 <string>福岡</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_60">
+                <property name="text">
+                 <string>佐賀</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19">
+              <item>
+               <widget class="QRadioButton" name="radioButton_69">
+                <property name="text">
+                 <string>長崎</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_70">
+                <property name="text">
+                 <string>長崎</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_8">
+                <property name="text">
+                 <string>熊本</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_71">
+                <property name="text">
+                 <string>大分</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_72">
+                <property name="text">
+                 <string>宮崎</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_73">
+                <property name="text">
+                 <string>鹿児島</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_74">
+                <property name="text">
+                 <string>沖縄</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
          </item>
         </layout>
        </item>
@@ -640,7 +707,7 @@
             <bool>true</bool>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ff0000;&quot;&gt;※未入力の項目があります&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string/>
            </property>
            <property name="pixmap">
             <pixmap>../image/unfill_error.png</pixmap>
