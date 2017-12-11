@@ -34,7 +34,7 @@ class EntryPage(QWidget):
 
         form.toeflCombo.addItem('---')
         form.toeicCombo.addItem('---')
-        form.toeicCombo.addItems(['%d' % i for i in range(991)])
+        form.toeicCombo.addItems(['%d' % i for i in range(0, 991, 5)])
         form.toeflCombo.addItems(['%d' % i for i in range(121)])
 
 
